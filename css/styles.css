@@ -147,23 +147,23 @@ body {
 }
 
 #celo-logo {
-    background-image: url(../img/celo-logo.png);
+    background-image: url(../img/networks/celo-logo.png);
 }
 
 #coda-logo {
-    background-image: url(../img/coda-logo.png);
+    background-image: url(../img/networks/coda-logo.png);
 }
 
 #dfinity-logo {
-    background-image: url(../img/dfinity-logo.png);
+    background-image: url(../img/networks/dfinity-logo.png);
 }
 
 #filecoin-logo {
-    background-image: url(../img/filecoin-logo.png);
+    background-image: url(../img/networks/filecoin-logo.png);
 }
 
 #solana-logo {
-    background-image: url(../img/solana-logo.png);
+    background-image: url(../img/networks/solana-logo.png);
 }
 
 .network-status {
@@ -221,19 +221,19 @@ body {
 }
 
 #sustainability-logo {
-    background-image: url(../img/sustainability.png);
+    background-image: url(../img/standards/sustainability.png);
 }
 
 #reliability-logo {
-    background-image: url(../img/reliability.png);
+    background-image: url(../img/standards/reliability.png);
 }
 
 #security-logo {
-    background-image: url(../img/security.png);
+    background-image: url(../img/standards/security.png);
 }
 
 #privacy-logo {
-    background-image: url(../img/privacy.png);
+    background-image: url(../img/standards/privacy.png);
 }
 
 .standard-details {
@@ -270,11 +270,11 @@ body {
 }
 
 #photo-1 {
-    background-image: url(../img/david.png);
+    background-image: url(../img/team/david.png);
 }
 
 #photo-2 {
-    background-image: url(../img/robert.png);
+    background-image: url(../img/team/robert.png);
 }
 
 
@@ -298,6 +298,10 @@ body {
     margin: 5px;
 }
 
+.contact-logo:hover {
+    opacity: 0.7;
+}
+
 #email {
     display: flex;
     flex-direction: row;
@@ -319,11 +323,12 @@ body {
 
 #telegram-logo {
     background-image: url(../img/contact/telegram.png);
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 #github-logo {
     background-image: url(../img/contact/github.png);
+    border-radius: 2px;
 }
 
 #social-logos {
@@ -332,4 +337,20 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 30px;
+}
+
+
+
+/**** FOOTER ****/
+#footer {
+    background-color: #181c20;
+    color: rgba(255, 255, 255, 0.192);
+    font-family: 'Jura', sans-serif;;
+    font-size: 12px;
+    padding: 20px;
+    pointer-events: none;
+}
+
+#footer p {
+    margin-top: -10px;
 }
