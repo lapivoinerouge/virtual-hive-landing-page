@@ -240,10 +240,11 @@ body {
     width: 15vw;
 }
 
+
 /*** SECTION 4 ***/
 /** ABOUT US **/
-#about-section {
-    height: 80vh;
+#about-container {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -274,4 +275,61 @@ body {
 
 #photo-2 {
     background-image: url(../img/robert.png);
+}
+
+
+/*** SECTION 4 ***/
+/** CONTACT **/
+#contact-container {
+    background-color: #181c20;
+    color: white;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* logo */
+.contact-logo {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    margin: 5px;
+}
+
+#email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    border-bottom: yellow 1px solid;
+}
+
+#email-logo {
+    background-image: url(../img/contact/mail.png);
+    margin: 15px;
+}
+
+#twitter-logo {
+    background-image: url(../img/contact/twitter.png);
+}
+
+#telegram-logo {
+    background-image: url(../img/contact/telegram.png);
+    border-radius: 5px;
+}
+
+#github-logo {
+    background-image: url(../img/contact/github.png);
+}
+
+#social-logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
 }
