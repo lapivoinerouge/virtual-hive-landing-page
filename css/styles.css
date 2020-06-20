@@ -239,3 +239,39 @@ body {
 .standard-details {
     width: 15vw;
 }
+
+/*** SECTION 4 ***/
+/** ABOUT US **/
+#about-section {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#team {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.team-member {
+    width: 20vw;
+    margin: 40px;
+}
+
+/* photos of the team */
+.member-photo {
+    width: 20vw;
+    height: 20vw;
+    background-size: cover;
+}
+
+#photo-1 {
+    background-image: url(../img/david.png);
+}
+
+#photo-2 {
+    background-image: url(../img/robert.png);
+}
