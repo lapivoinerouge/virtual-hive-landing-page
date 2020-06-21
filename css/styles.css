@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gafata&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
 /***** DOCUMENT *****/
@@ -17,6 +14,7 @@ body {
 /**** NAVBAR ****/
 #navbar {
     background-color: #fff;
+    opacity: 0.97;
     position: fixed;
     width: 100%;
     display: flex;
@@ -48,9 +46,6 @@ body {
 
 #nav-company-name {
     color: #1b2b36;
-    /* font-family: 'Gafata', sans-serif; */
-    /* font-family: 'Righteous', cursive; */
-    /* font-family: 'Exo 2', sans-serif; */
     font-family: 'Poiret One', cursive;
     margin: 20px 10px 20px 5px;
     font-size: 35px;
@@ -79,7 +74,8 @@ body {
 #nav-list li:hover {
     cursor: pointer;
     color: rgb(241, 163, 89);
-    font-weight: 400;
+    /* font-weight: 400; */
+    border-bottom: rgb(241, 163, 89) solid 2px;
 }
 
 /**** MAIN CONTENT ****/
@@ -110,6 +106,7 @@ body {
     z-index: -1;
 }
 
+
 /*** SECTION 2 ***/
 /** VALIDATED NETWORKS **/
 #network-container {
@@ -117,15 +114,24 @@ body {
     flex-direction: column;
     align-items: center;
     height: 90vh;
+    margin: 10px 10px 50px 10px;
 }
 
 #network-logo-container {
-    width: 100vw;
-    height: 50vh;
+    width: 90vw;
+    height: 80vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+.networks-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 80vw;
 }
 
 #network-logo-container a {
@@ -136,14 +142,15 @@ body {
     align-items: center;
 }
 
-#network-logo-container a:hover {
-    opacity: 0.8;
-}
-
 .network-logo {
     background-size: cover;
-    height: 100px;
-    width: 100px;
+    height: 130px;
+    width: 130px;
+    z-index: -1;
+}
+
+.network-logo:hover {
+    opacity: 0.8;
 }
 
 #celo-logo {
@@ -166,22 +173,20 @@ body {
     background-image: url(../img/networks/solana-logo.png);
 }
 
-.network-status {
-    background: linear-gradient(to bottom, rgba(254,182,67,1) 0%, rgba(232,124,23,1) 100%);
-    /* border-bottom: 3px solid rgb(177, 94, 16); */
-    text-shadow: 0px -1px rgb(177, 94, 16);
-    padding: 10px;
-    margin: 20px;
-    color: black;
-    min-width: fit-content;
-    text-align: center;
-    border-radius: 10px;
-    opacity: 1;
+#cosmos-logo {
+    background-image: url(../img/networks/cosmos-logo.png);
 }
 
-.testnet {
-    background: linear-gradient(to bottom, rgb(88, 216, 109) 0%, rgb(44, 122, 57) 100%);
-    text-shadow: 0px -1px rgb(44, 122, 57);
+.network-status {
+    border: 2px solid #181c20;
+    padding: 10px 15px;
+    margin: 20px;
+    color: #181c20;
+    min-width: fit-content;
+    width: 13vw;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 500;
 }
 
 
@@ -244,7 +249,7 @@ body {
 /*** SECTION 4 ***/
 /** ABOUT US **/
 #about-container {
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -264,8 +269,8 @@ body {
 
 /* photos of the team */
 .member-photo {
-    width: 20vw;
-    height: 20vw;
+    width: 15vw;
+    height: 15vw;
     background-size: cover;
 }
 
@@ -309,7 +314,10 @@ body {
     text-decoration: none;
     font-size: 1.2em;
     color: white;
-    border-bottom: yellow 1px solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255), rgba(255, 255, 255, 0));
+    border-image-slice: 1;
 }
 
 #email-logo {
@@ -338,7 +346,6 @@ body {
     justify-content: center;
     margin-top: 30px;
 }
-
 
 
 /**** FOOTER ****/
