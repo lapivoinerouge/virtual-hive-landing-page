@@ -16,11 +16,11 @@
                 <div id="nav-menu">
                     <ul id="nav-list">
                         <!-- section links -->
-                        <li>Home</li>
-                        <li>Validated Networks</li>
-                        <li>Our Standards</li>
-                        <li>About Us</li>
-                        <li>Contact</li>
+                        <li id="nav-title1" class="nav-title">Home</li>
+                        <li id="nav-title2" class="nav-title">Validated Networks</li>
+                        <li id="nav-title3" class="nav-title">Our Standards</li>
+                        <li id="nav-title4" class="nav-title">About Us</li>
+                        <li id="nav-title5" class="nav-title">Contact</li>
                     </ul>
                 </div>
             </div>
@@ -29,7 +29,7 @@
         <div id="content">
             <!-- sections -->
             <!-- section 1 -->
-            <section id="home-section" class="section">
+            <section id="section1" class="section active-class section">
                 <div id="home" class="section-container">
                     <h2 id="title-1" class="section-title">Home</h2>
                     <p>Home info</p>
@@ -37,7 +37,7 @@
             </section>
     
             <!-- section 2 -->
-            <section id="networks-section" class="section">
+            <section id="section2" class="section">
                 <div id="network-container" class="section-container">
                     <h2 id="title-2" class="section-title">Validated Networks</h2>
                     <div id="network-logo-container">
@@ -66,7 +66,7 @@
             </section>
     
             <!-- section 3 -->
-            <section id="standards-section" class="section">
+            <section id="section3" class="section">
                 <div class="section-container" id="standards-container">
                     <h2 id="title-3" class="section-title">Our Standards</h2>
                     <div id="standards">
@@ -93,50 +93,50 @@
                     </div>
                 </div>
             </section>
+
+            <!-- section 4 -->
+            <section id="section4" class="section">
+                <div id="about-container" class="section-container">
+                    <h2 id="title-4" class="section-title">About Us</h2>
+                    <div id="team">
+                        <div id="person-1" class="team-member">
+                            <div id="photo-1" class="member-photo"></div>
+                            <h3 class="member-name">David Bohnhoff (CEO)</h3>
+                            <div class="member-details">4 years of experience in auditing and in the crypto space.</div>
+                        </div>
+                        <div id="person-1" class="team-member">
+                            <div id="photo-2" class="member-photo"></div>
+                            <h3 class="member-name">Robert Grütze (CTO)</h3>
+                            <div class="member-details">6 years of experience in corporate IT innovation projects and blockchain technology development.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- section 5 -->
+            <section id="section5" class="section">
+                <div id="contact-container" class="section-container">
+                    <h2 id="title-5" class="section-title">Contact</h2>
+                    <div id="contact">
+                        <a href="mailto:contact@virtualhive.io" id="email">
+                            <div id="email-logo" class="contact-logo"></div>
+                            <div>contact@virtualhive.io</div>
+                        </a>
+                        <div id="social-logos">
+                            <a href="https://twitter.com/virtualhiveio">
+                                <div id="twitter-logo" class="contact-logo"></div>
+                            </a>
+                            <a href="https://telegram.org/">
+                                <div id="telegram-logo" class="contact-logo"></div>
+                            </a>
+                            <a href="https://github.com/">
+                                <div id="github-logo" class="contact-logo"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-    
-        <!-- section 4 -->
-        <section id="about-section" class="section">
-            <div id="about-container" class="section-container">
-                <h2 id="title-4" class="section-title">About Us</h2>
-                <div id="team">
-                    <div id="person-1" class="team-member">
-                        <div id="photo-1" class="member-photo"></div>
-                        <h3 class="member-name">David Bohnhoff (CEO)</h3>
-                        <div class="member-details">4 years of experience in auditing and in the crypto space.</div>
-                    </div>
-                    <div id="person-1" class="team-member">
-                        <div id="photo-2" class="member-photo"></div>
-                        <h3 class="member-name">Robert Grütze (CTO)</h3>
-                        <div class="member-details">6 years of experience in corporate IT innovation projects and blockchain technology development.</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <!-- section 5 -->
-        <section id="contact-section" class="section">
-            <div id="contact-container" class="section-container">
-                <h2 id="title-5" class="section-title">Contact</h2>
-                <div id="contact">
-                    <a href="mailto:contact@virtualhive.io" id="email">
-                        <div id="email-logo" class="contact-logo"></div>
-                        <div>contact@virtualhive.io</div>
-                    </a>
-                    <div id="social-logos">
-                        <a href="https://twitter.com/virtualhiveio">
-                            <div id="twitter-logo" class="contact-logo"></div>
-                        </a>
-                        <a href="https://telegram.org/">
-                            <div id="telegram-logo" class="contact-logo"></div>
-                        </a>
-                        <a href="https://github.com/">
-                            <div id="github-logo" class="contact-logo"></div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
     
         <footer id="footer">
             <div id="footer-bar">
@@ -145,5 +145,8 @@
             </div>
         </footer>
     </div>
+
+    <script type="text/javascript" src="js/app.js"></script>
+
 </body>
 </html>

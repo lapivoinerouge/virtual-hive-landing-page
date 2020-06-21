@@ -100,7 +100,7 @@ body {
 
 /*** SECTION 1 ***/
 /** HOME **/
-#home-section {
+#section1 {
     background-image: url(https://images.pexels.com/photos/3612931/pexels-photo-3612931.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
     background-repeat: no-repeat;
     background-size: cover;
