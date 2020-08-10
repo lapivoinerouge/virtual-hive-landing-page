@@ -217,6 +217,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .standards-logo {
@@ -259,12 +260,17 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    text-align: center;
     
 }
 
 .team-member {
     width: 20vw;
     margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* photos of the team */
@@ -274,12 +280,21 @@ body {
     background-size: cover;
 }
 
+.member-details {
+    height: 100px;
+}
+
+
 #photo-1 {
     background-image: url(../img/team/david.png);
 }
 
 #photo-2 {
     background-image: url(../img/team/robert.png);
+}
+
+#photo-3 {
+    background-image: url(../img/team/azra.png)
 }
 
 
@@ -360,4 +375,8 @@ body {
 
 #footer p {
     margin-top: -10px;
+}
+
+#legal-disclosure {
+    margin-bottom: 30px;
 }
